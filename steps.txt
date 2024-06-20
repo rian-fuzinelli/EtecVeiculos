@@ -1,0 +1,9 @@
+dotnet new sln --name EtecVeiculos
+
+dotnet new webapi -o EtecVeiculos.Api --use-controllers
+
+dotnet sln add EtecVeiculos.Api\EtecVeiculos.Api.csproj
+
+dotnet new mvc -o EtecVeiculos.UI
+
+dotnet sln add EtecVeiculos.UI\EtecVeiculos.UI.csproj
